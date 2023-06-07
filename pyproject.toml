@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "chat3po"
+version = "0.1.0"
+description = "Exploring LLMs potential in an entertaining way."
+
+authors = ["Michal Bahník <your-email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8.1"
+langchain = "^0.0.192"
+click = "^8.1"
+openai = "^0.27.8"
+
+[tool.poetry.scripts]
+chat3po = "chat3po.cli:cli"
+
+[build-system]
+requires = ["poetry-core"]
+
+[tool.poetry.plugins."poetry-dynamic-versioning"]
+version-file = "chat3po/__init__.py"
